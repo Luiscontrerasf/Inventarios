@@ -1,10 +1,18 @@
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
+.form-signin {
+    width: 40%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
 }
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
+.form-signin .checkbox {
+    font-weight: 40;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
 }

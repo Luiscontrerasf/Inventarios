@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,8 +37,7 @@
                     </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="producto.html">Productos</a>
-                            <a class="dropdown-item" href="reportes.html">Reporte de Productos</a>
-                            <a class="dropdown-item" href="agregar.html">Agregar Productos</a>
+
                         </div>
                     </li>
 
@@ -55,59 +54,26 @@
     </nav>
     <!-- //header-->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="well well-sm">
-                    <form class="form-horizontal" method="post">
-                        <fieldset>
-                            <legend class="text-center header">Contactanos</legend>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
-                                </div>
-                            </div>
+    <form class="form-signin" id="form-login" method="POST">
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="image" name="image" placeholder="Ingresa tu mensaje aqui. Nosotros te responderemos durante los siguientes 2 dias." rows="7"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+        <h1 class="h3 mb-3 font-weight-normal text-center">Contactanos!</h1>
+        <label for="inputName" class="sr-only">Nombre</label>
+        <input type="name" id="inputName" class="form-control" placeholder="Nombre" name="idName" required>
+        <br>
+        <label for="inputEmail" class="sr-only">Email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="idEmail" required>
+        <span class="col-md-5 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+        <div class="col-lg-12">
+            <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aqui. Nosotros te responderemos durante los siguientes 2 dias." rows="7"></textarea>
         </div>
-    </div>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
+
+        <a class="text-center" href="index.html">Home</a>
+
+
+    </form>
 
 
 
