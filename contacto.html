@@ -61,44 +61,45 @@
                     <form class="form-horizontal" method="post">
                         <fieldset>
                             <legend class="text-center header">Contactanos</legend>
-
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            <div class="form-group" id="form-contacto">
+                                <div class="form-group" id="form-contacto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="idName" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                <div class="form-group" id="form-contacto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="idApellido" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                <div class="form-group" id="form-contacto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="idEmail" type="text" placeholder="Email" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                <div class="form-group" id="form-contacto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="idPhone" type="text" placeholder="Telefono" class="form-control">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aqui. Nosotros te responderemos durante los siguientes 2 dias." rows="7"></textarea>
+                                <div class="form-group" id="form-contacto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aqui. Nosotros te responderemos durante los siguientes 2 dias." rows="7"></textarea>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                <div class="form-group" id="form-contacto">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -107,27 +108,6 @@
             </div>
         </div>
     </div>
-
-    <form class="form-signin" id="form-login" method="POST">
-        <img class="mb-4" src="image/estrategias.png" alt="" width="150" height="150">
-        <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
-        <label for="inputName" class="sr-only">Nombre</label>
-        <input type="name" id="inputName" class="form-control" placeholder="Nombre" name="idName" required>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email" name="idEmail" required>
-        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-        <div class="col-md-8">
-            <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aqui. Nosotros te responderemos durante los siguientes 2 dias." rows="7"></textarea>
-        </div>
-
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
-        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-        <a href="index.html">Home</a>
-
-        <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
-    </form>
-
-
 
 
 
@@ -158,6 +138,39 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <!--Validacion jQuery-->
+
+    <script>
+        $(document).ready(function() {
+            $('#form-contacto').validate({
+                debug: true,
+                rules: {
+                    idEmail: {
+                        Required: true,
+                    },
+
+                    idName: {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 15
+                    },
+
+                    idApellido: {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 15
+                    },
+
+                    idPhone: {
+                        required: true,
+
+                    }
+                }
+            });
+        });
+    </script>
+    <!--//Validacion jQuery-->
 </body>
 
 </html>
