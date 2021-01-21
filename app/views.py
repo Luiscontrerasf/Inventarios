@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import producto
+from .forms import contactoForm
 
 # Create your views here.
 
@@ -13,4 +14,11 @@ def listar_productos(request):
             'productos': productos
         }
     return render(request, 'productos.html', data)
+
+
+def contacto(request):
+    data = {
+        'form': contactoForm()
+    }
+    return render(request, 'contactos.html', data)
 
