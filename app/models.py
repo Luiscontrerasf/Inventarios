@@ -18,8 +18,8 @@ class movimiento(models.Model):
     ingreso = models.IntegerField(verbose_name='Cantidad Ingresada')
     fecha_egreso = models.DateTimeField(null=True)
     egreso = models.IntegerField(verbose_name='Cantidad Egresada', null=True)
-    ubicacion_actual = models.CharField('Tipo',max_length=15, null=True)
-    ubicacion_anterior = models.CharField('Tipo',max_length=15,null=True)
+    ubicacion_actual = models.CharField('Ubicacion Actual',max_length=15, null=True)
+    ubicacion_anterior = models.CharField('Ubicacion Anterior',max_length=15,null=True)
 
     def __str__(self):
         return self.ingreso + ' ' + self.egreso + ' ' + self.ubicacion_actual + ' ' + self.ubicacion_anterior
