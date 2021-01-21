@@ -1,0 +1,12 @@
+footer {
+    background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45;
+}
+
+#modalbody {
+    font-family: Rebel;
+    font-size: 25px;
+}

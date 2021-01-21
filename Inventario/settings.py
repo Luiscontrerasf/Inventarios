@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app',
+    'crispy_forms',
+    #'social_django',
+    'pwa',
+    #'rest_framework',
+    
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -103,9 +111,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-cl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
@@ -118,3 +126,31 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+ 
+
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+
+
+
+
+PWA_APP_NAME = "app"
+PWA_APP_DESCRIPTION = "Pagina de Inventario"
+PWA_APP_THEME_COLOR = "#3477f5"
+PWA_APP_BACKGROUND_COLOR = "#6699f7"
+
+PWA_APP_ICONS = [
+    {
+        "scr":"/static/image/estrategias.png",
+        "sizes": "160x160"
+    }
+]
+
+PWA_APP_ICONS_APPLE = [
+    {
+        "scr":"/static/image/estrategias.png",
+        "sizes": "160x160"
+    }
+]
