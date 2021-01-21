@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<table class="table table-striped table-hover table-responsive-sm">
+    <tr>
+        <th>
+            <th width="200">PRODUCTO</th>
+            <th width="150">DESCRIPCION</th>
+            <th width="350">IMAGEN</th>
+
+        </th>
+    </tr>
+    {% for p in productos %}
+
+    <tr>
+        <td>{{ e.name }}</td>
+        <td>{{ e.descripcion}}</td>
+        <td>{{ e.imagen}}</td>
+
+
+
+
+    </tr>
+
+
+
+    {% endfor %}
+</table>
+
+
+
+{% endblock %}

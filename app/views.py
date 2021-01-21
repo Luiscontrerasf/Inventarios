@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import producto
-from .forms import contactoForm
+from .forms import contactoForm, productoForm
 
 # Create your views here.
 
@@ -31,3 +31,29 @@ def contacto(request):
 
     return render(request, 'contactos.html', data)
 
+
+def agregar_producto(request):
+    
+    data = {
+        'form': productoForm()
+    }
+
+    if request.method == 'POST':
+        formulario = productoForm(data=request.POST, files=request.FILES)
+        if formulario.is_valid():
+            formulario.save()
+            data["mensaje"] = "Agregado correctamente"
+        else:
+            data["form"] = formulario  
+
+    return render(request, 'agregar.html', data)
+
+def listar_productos2(request):
+    productos2 = producto.objects.all()
+    data = {
+            'productos2': productos2
+        }
+    
+    return render(request, 'listar.html', data)
+
+    
