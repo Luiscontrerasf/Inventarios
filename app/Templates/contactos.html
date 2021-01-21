@@ -1,14 +1,31 @@
 {% extends 'base.html' %} {% load static %} {% block content %}{% load crispy_forms_tags %}
 
 
-<h2>Contactanos!</h2>
-<form action="" class="formulario" method="post">
-    {% csrf_token %} {{ form | crispy }}
+<h2 class="text-center">Contactanos!</h2>
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-body">
+                <form action="" class="formulario" method="post">
+                    {% csrf_token %} {{ form | crispy }}
 
-    <br>
-    <button type="submit" id="btnEnviar" class="button">Enviar</button>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <input type="reset" value="Cancelar" class="btn btn-secondary"> &nbsp;
+                        <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar</button>
+                    </div>
 
 
 
-</form>
-{{mensaje}} {% endblock %}
+                </form>
+                {{mensaje}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
