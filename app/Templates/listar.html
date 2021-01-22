@@ -12,9 +12,9 @@
     {% for p in productos %}
 
     <tr>
-        <td>{{ e.name }}</td>
-        <td>{{ e.descripcion}}</td>
-        <td>{{ e.imagen}}</td>
+        <td>{{ p.name | title}}</td>
+        <td>{{ p.descripcion | title}}</td>
+        <td><img src="{{ p.imagen.url }}" alt=""></td>
 
 
 

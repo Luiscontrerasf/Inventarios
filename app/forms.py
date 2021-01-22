@@ -1,6 +1,5 @@
 from django import forms
-from .models import conacto, producto, movimiento
-
+from .models import conacto, producto 
 
 class contactoForm(forms.ModelForm):
 

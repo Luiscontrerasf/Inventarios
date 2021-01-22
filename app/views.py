@@ -50,10 +50,10 @@ def agregar_producto(request):
 
 def listar_productos2(request):
     productos2 = producto.objects.all()
+
     data = {
             'productos2': productos2
-        }
-    
+    }    
     return render(request, 'listar.html', data)
 
     
