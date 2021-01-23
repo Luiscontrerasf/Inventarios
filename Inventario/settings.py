@@ -32,6 +32,12 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
 
+SOCIAL_AUTH_FACEBOOK_KEY = "421534035725530"
+SOCIAL_AUTH_FACEBOOK_SECRET = "985ed1ed82cafc069b7b3461fc005385"
+
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,10 +49,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'crispy_forms',
-    #'social_django',
-    'pwa',
-    #'rest_framework',
-    
+    'rest_framework',
+    'pwa',   
+    'social_django',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -147,14 +152,23 @@ PWA_APP_BACKGROUND_COLOR = "#6699f7"
 
 PWA_APP_ICONS = [
     {
-        "scr":"/static/image/estrategias.png",
+        "scr":"/static/image/mask.png",
         "sizes": "160x160"
     }
 ]
 
 PWA_APP_ICONS_APPLE = [
     {
-        "scr":"/static/image/estrategias.png",
+        "scr":"/static/image/mask.png",
         "sizes": "160x160"
     }
+]
+
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR,'serviceworker.js')
+
+
+
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
 ]

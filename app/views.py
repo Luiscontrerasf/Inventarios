@@ -1,8 +1,19 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import producto
 from .forms import contactoForm, productoForm
+from rest_framework import viewsets
+from .serializers import productoSerializer
+
+
 
 # Create your views here.
+
+class productoViewset(viewsets.ModelViewSet):
+    queryset = producto.objects.all()
+    serializer_class = productoSerializer
+
+
+
 
 def home(request):
     return render(request, 'index.html')
