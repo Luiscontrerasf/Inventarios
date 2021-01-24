@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import productoViewset,home,listar_productos,contacto,agregar_producto,listar_productos2,modificar_producto,eliminar_producto
+from .views import productoViewset,home,listar_productos,contacto,agregar_producto,listar_productos2,modificar_producto,eliminar_producto,somos1
 from rest_framework import routers
 
 
@@ -17,4 +17,5 @@ urlpatterns = [
     path('modificar/<id>/', modificar_producto, name="modificar_producto"),
     path('eliminar/<id>/', eliminar_producto, name="eliminar_producto"),   
     path('api/', include(router.urls)),
+    path('somos/', somos1, name="somos1"),
 ]

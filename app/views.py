@@ -14,6 +14,9 @@ class productoViewset(viewsets.ModelViewSet):
 
 
 
+def somos1(request):
+    return render(request, 'somos.html')
+
 
 def home(request):
     return render(request, 'index.html')
