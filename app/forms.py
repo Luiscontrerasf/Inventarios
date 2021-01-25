@@ -1,5 +1,5 @@
 from django import forms
-from .models import conacto, producto 
+from .models import conacto, producto
 
 class contactoForm(forms.ModelForm):
 
@@ -13,5 +13,8 @@ class productoForm(forms.ModelForm):
     class Meta:
         model = producto
         fields = '__all__'
+
+
+
 
 
